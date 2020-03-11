@@ -1,9 +1,9 @@
 <template>
   <div class="app">
     <div class="head">
-		<router-link to="/name">Go to namw12312312333331111</router-link>
-		<router-link to="/name1">Go to namw</router-link>
-	</div>
+      <router-link to="/name">Go to namw12312312333331111</router-link>
+      <router-link to="/name1">Go to namw</router-link>
+    </div>
 
     <transition name="move-fade-bottom-to-top">
       <router-view class="app-router-view"></router-view>
@@ -16,7 +16,7 @@ import 'vue-transition.css'
 export default {
   name: 'App',
   created:function(){
-		
+
   }
 }
 </script>
@@ -35,7 +35,7 @@ export default {
     overflow: hidden;
   }
   .app {
-    background-color: #000;
+    background-color: #fff;
     perspective: 1200px;
   }
 
@@ -52,7 +52,7 @@ export default {
     visibility: visible;
   }
   .head{
-	height:100px;
-	background-color:red;
+	height:60px;
+	background-color:#42B983;
   }
 </style>
