@@ -1,9 +1,5 @@
 <template>
   <div class="hello">
-    <div class="animated bounceIn" id="ball">
-    1314141232
-    </div>
-    <h1 class="animated infinite pulse duration-3s delay-1s">Example</h1>
 	<div class="content">12333333</div>
   </div>
 </template>
