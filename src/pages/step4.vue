@@ -1,5 +1,6 @@
 <template>
   <div class="hello">
+    qweqe
     <!-- <div class="animated bounceIn" id="ball">
     1314141232
     </div>
@@ -22,12 +23,17 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .hello{
+  width: 100%;
 	position:absolute;
 	top:70px;
 	bottom:0;
 	left:0;
 	right:0;
-  background:url(../../static/landao-背景-28-28.jpg) center 0 no-repeat;
-  background-size: cover;
+  background:url(../../static/landao-31.jpg) no-repeat 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    -o-background-size: contain;
+    background-position: center 0;
 }
 </style>

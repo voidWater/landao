@@ -27,7 +27,11 @@ export default {
 	bottom:0;
 	left:0;
 	right:0;
-  background:url(../../static/landao-背景-28-28.jpg) center 0 no-repeat;
-  background-size: cover;
+  background:url(../../static/landao-32.jpg) no-repeat 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    -o-background-size: contain;
+    background-position: center 0;
 }
 </style>

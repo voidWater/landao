@@ -23,10 +23,10 @@ export default {
 	bottom:0;
 	left:0;
 	right:0;
-  background:url(https://high-cn-01.cdn.bilnn.com/get/wxcx01/2020/3/12/170cef478aab1659) no-repeat 100%;
+  background:url(../../static/landao-30.jpg) no-repeat 100%;
   background-size: cover;
   background-repeat: no-repeat;
-    -webkit-background-size: cover;
+    -webkit-background-size: contain;
     -o-background-size: cover;
     background-position: center 0;
 }

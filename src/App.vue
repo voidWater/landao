@@ -3,21 +3,30 @@
     <div class="head">
       <el-row :gutter="20">
         <el-col :span="10"><img src="http://www.landao.cc/templates/images/logo.png" /></el-col>
-        <el-col :span="10">
+        <el-col :span="12">
 
           <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
             <el-menu-item index="1">
               <router-link to="/step1">走进蓝岛</router-link>
             </el-menu-item>
             <el-menu-item index="2">
-             <router-link to="/step2">产品业务</router-link>
+             <router-link to="/step2">企业文化</router-link>
             </el-menu-item>
             <el-menu-item index="3">
-              <router-link to="/step3">企业文化</router-link>
+              <router-link to="/step3">新闻中心</router-link>
+            </el-menu-item>
+            <el-menu-item index="4">
+              <router-link to="/step4">产品中心</router-link>
+            </el-menu-item>
+            <el-menu-item index="5">
+             <router-link to="/step5">人力资源</router-link>
+            </el-menu-item>
+            <el-menu-item index="3">
+              <router-link to="/step3">投资者关系</router-link>
             </el-menu-item>
           </el-menu>
         </el-col>
-        <el-col :span="4">
+        <el-col :span="2">
           OA登录
         </el-col>
       </el-row>
@@ -28,7 +37,7 @@
 
     </div>
     <div class="qrcode">
-      <img class="img" src="../static/1584020850.png"/>
+      <img class="img" src="../static/landao-36.png"/>
     </div>
 
     <transition name="move-fade-bottom-to-top">
@@ -61,7 +70,7 @@ export default {
     overflow: hidden;
   }
   .app {
-    background-color: #fff;
+    background-color: #f7f7f7;
     perspective: 1200px;
   }
 
