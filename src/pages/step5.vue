@@ -1,10 +1,5 @@
 <template>
   <div class="hello">
-    <!-- <div class="animated bounceIn" id="ball">
-    1314141232
-    </div>
-    <h1 class="animated infinite pulse duration-3s delay-1s">Example</h1>
-	<div class="content">12333333</div> -->
   </div>
 </template>
 
@@ -23,7 +18,7 @@ export default {
 <style scoped>
 .hello{
 	position:absolute;
-	top:70px;
+	top:0;
 	bottom:0;
 	left:0;
 	right:0;

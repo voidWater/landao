@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-	<div class="content">12333333</div>
+	<div class="content"></div>
   </div>
 </template>
 
@@ -19,11 +19,11 @@ export default {
 <style scoped>
 .hello{
 	position:absolute;
-	top:70px;
+	top:0;
 	bottom:0;
 	left:0;
 	right:0;
-  background:url(../../static/landao-30.jpg) no-repeat 100%;
+  background:url(../../static/step3.jpg) no-repeat 100%;
   background-size: cover;
   background-repeat: no-repeat;
     -webkit-background-size: contain;

@@ -1,46 +1,22 @@
 <template>
-  <div class="app">
-    <div class="head">
-      <el-row :gutter="20">
-        <el-col :span="10"><img src="http://www.landao.cc/templates/images/logo.png" /></el-col>
-        <el-col :span="12">
-
-          <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
-            <el-menu-item index="1">
-              <router-link to="/step1">走进蓝岛</router-link>
-            </el-menu-item>
-            <el-menu-item index="2">
-             <router-link to="/step2">企业文化</router-link>
-            </el-menu-item>
-            <el-menu-item index="3">
-              <router-link to="/step3">新闻中心</router-link>
-            </el-menu-item>
-            <el-menu-item index="4">
-              <router-link to="/step4">产品中心</router-link>
-            </el-menu-item>
-            <el-menu-item index="5">
-             <router-link to="/step5">人力资源</router-link>
-            </el-menu-item>
-            <el-menu-item index="3">
-              <router-link to="/step3">投资者关系</router-link>
-            </el-menu-item>
-          </el-menu>
-        </el-col>
-        <el-col :span="2">
-          OA登录
-        </el-col>
-      </el-row>
-
-      <div style="width: 800px;">
-
-      </div>
-
+  <div class="app" v-bind:class="{ bg_white: page==5||page==3}" >
+    <div class="scoll-bar">
+      <div class="item" v-bind:class="{ item_cur: page==1}"></div>
+      <div class="item" v-bind:class="{ item_cur: page==2}"></div>
+      <div class="item" v-bind:class="{ item_cur: page==3}"></div>
+      <div class="item" v-bind:class="{ item_cur: page==4}"></div>
+      <div class="item" v-bind:class="{ item_cur: page==5}"></div>
+    </div>
+    <div class="arr" v-if="page!=5">
+      <a @click="downPage">
+        <img  src="../static/arr.png" />
+      </a>
     </div>
     <div class="qrcode">
       <img class="img" src="../static/landao-36.png"/>
     </div>
 
-    <transition name="move-fade-bottom-to-top">
+    <transition :name="dh">
       <router-view class="app-router-view"></router-view>
     </transition>
   </div>
@@ -50,8 +26,39 @@
 import 'vue-transition.css'
 export default {
   name: 'App',
+  data:function(){
+    return{
+      page:1,
+      dh:'move-fade-top-to-bottom'
+    }
+  },
   created:function(){
-
+      this.$router.push({path:`/step1`})
+  },
+  mounted() {
+     window.addEventListener('mousewheel',this.handleScroll,false)
+  },
+  methods:{
+    downPage(){
+      this.dh='move-fade-bottom-to-top'
+      if(this.page+1>5)return;
+      this.page = this.page+1;
+      this.$router.push({path:`/step`+this.page})
+    },
+    handleScroll(e){
+      var direction = e.deltaY>0?'down':'up'
+      console.log(direction)
+      if(direction=='up'){
+        this.dh='move-fade-top-to-bottom'
+        if(this.page-1<1)return;
+        this.page = this.page-1;
+      }else{
+        this.dh='move-fade-bottom-to-top'
+        if(this.page+1>5)return;
+        this.page = this.page+1;
+      }
+      that.$router.push({path:`/step`+this.page})
+    }
   }
 }
 </script>
@@ -73,7 +80,9 @@ export default {
     background-color: #f7f7f7;
     perspective: 1200px;
   }
-
+  .el-menu.el-menu--horizontal{
+    border-bottom: solid 1px #005bac;
+  }
   .app .app-router-view {
     position: absolute;
     top: 0;
@@ -86,19 +95,42 @@ export default {
     transform-style: preserve-3d;
     visibility: visible;
   }
-  .head{
-	height:50px;
-	background-color:#409EFF;
-  text-align: center;
-  padding: 10px
+  .bg_white{
+    background-color: #FFFFFF;
   }
+
   .head .el-menu{
-    background-color:#409EFF;
+    background-color:#005bac;
+  }
+  .scoll-bar{
+    position: fixed;
+    left:3.75rem;
+    top: 5rem;
+    z-index: 99999;
+  }
+  .arr{
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    bottom: 1.25rem;
+    z-index: 99999;
+  }
+  .arr img{
+    width: 3.125rem;
+  }
+  .scoll-bar .item{
+    width: 0.625rem;
+    height: 5rem;
+    background-color: #dad6d69e;
+    margin-top: 1.25rem;
+  }
+  .scoll-bar .item_cur{
+    background-color: #005BAC;
   }
   .qrcode{
     position: fixed;
-    right:30px;
-    bottom: 30px;
+    right:3.125rem;
+    bottom: 3.125rem;
     z-index: 99999;
   }
   .qrcode .img{
