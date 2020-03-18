@@ -81,7 +81,9 @@ export default {
   },
   methods:{
     navTo(path){
-      this.$router.push({path:`/step`+path})
+      this.$router.push({path:`/step`+path});
+      this.tabs=[{type:"main",path:"/step1",page:1},{type:"main",path:"/step2",page:2},{type:"main",path:"/step3",page:3},{type:"main",path:"/step4",page:4},{type:"main",path:"/step5",page:5}]
+      
     },
     selectTab(item){
       this.jumpPage(item.path,item.page);
@@ -91,10 +93,16 @@ export default {
       var path = 'step1';
       switch(val){
         case '1-1': {this.switchTab("main");this.jumpPage('step2',2);break}
+        case '1-2': {this.switchTab("sub");this.jumpPage('sub',1);break}
         case '1-3': {this.switchTab("main");this.jumpPage('step4',4);break}
         case '1-4': {this.switchTab("main");this.jumpPage('step5',5);break}
 
         case '4-1': {this.switchTab("cl");this.jumpPage('cl_1',1);break}
+        case '4-2': {this.switchTab("cl");this.jumpPage('cl_2',2);break}
+        case '4-3': {this.switchTab("cl");this.jumpPage('cl_3',3);break}
+        case '4-4': {this.switchTab("cl");this.jumpPage('cl_4',4);break}
+
+        case '6':{window.open("https://www.tianyancha.com/company/192256142");break}
       }
     },
     jumpPage(path,page){
@@ -107,7 +115,14 @@ export default {
       this.$router.push({path:path})
     },
     switchTab(type){
-      if(this.tabs[0].type==type)return
+      console.log(type)
+      if(type=='sub'){
+        this.tabs=[];
+        return;
+      }
+      if(this.tabs.length!=0){
+        if(this.tabs[0].type==type)return
+      }
       if(type == 'main')
       this.tabs=[{type:"main",path:"/step1",page:1},{type:"main",path:"/step2",page:2},{type:"main",path:"/step3",page:3},{type:"main",path:"/step4",page:4},{type:"main",path:"/step5",page:5}]
       if(type == 'cl')
@@ -120,6 +135,10 @@ export default {
       this.$router.push({path:`/step`+this.page})
     },
     handleScroll(e){
+      console.log(this.tabs.length==0)
+      if(this.tabs.length==0){
+        return
+      }
       var direction = e.deltaY>0?'down':'up'
       console.log(direction)
       var page=1;
@@ -132,10 +151,9 @@ export default {
         if(this.page+1>this.tabs[page].length)return;
         page = this.page+1;
       }
-      console.log(this.tabs[page].path)
+      console.log(this.tabs[page-1].path)
       console.log(page)
-      this.jumpPage(this.tabs[page].path,page)
-      //this.$router.push({path:`/step`+this.page})
+      this.jumpPage(this.tabs[page-1].path,page)
     }
   }
 }

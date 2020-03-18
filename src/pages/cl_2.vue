@@ -33,7 +33,7 @@ export default {
 	bottom:0;
 	left:0;
 	right:0;
-  background:url(../../static/cl_1.jpg) center 0 no-repeat;
+  background:url(../../static/cl_2.jpg) center 0 no-repeat;
   background-size: cover;
 }
 </style>

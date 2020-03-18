@@ -1,6 +1,11 @@
 <template>
   <div class="hello">
-
+    <img class="zd-img" src="../../static/zd1.png" />
+    <img class="zd-img" src="../../static/zd2.png" />
+    <img class="zd-img" src="../../static/zd3.png" />
+    <img class="zd-img" src="../../static/zd4.png" />
+    <img class="zd-img" src="../../static/zd5.png" />
+    <img class="zd-img" src="../../static/zd6.png" />
   </div>
 </template>
 
@@ -21,6 +26,11 @@ export default {
 </script>
 
 <style scoped>
+  .zd-img{
+    height:50%;
+    width: 33.3333%;
+    float: left;
+  }
 .head{
   height:3.75rem;
   background-color:#005bac;

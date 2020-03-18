@@ -13,10 +13,17 @@ import cl_2 from '@/pages/cl_2'
 import cl_3 from '@/pages/cl_3'
 import cl_4 from '@/pages/cl_4'
 
+import sub from '@/pages/sub'
+
 Vue.use(Router)
 
 export default new Router({
   routes: [
+  {
+     path: '/sub',
+     name: 'sub',
+     component: sub
+  },
 	{
 	  path: '/step1',
 	  name: 'step1',
