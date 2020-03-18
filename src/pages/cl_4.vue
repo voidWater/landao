@@ -29,11 +29,11 @@ export default {
 }
 .hello{
 	position:absolute;
-	top:5rem;
+	top:0;
 	bottom:0;
 	left:0;
 	right:0;
-  background:url(../../static/step1.jpg) center 0 no-repeat;
+  background:url(../../static/cl_1.jpg) center 0 no-repeat;
   background-size: cover;
 }
 </style>
