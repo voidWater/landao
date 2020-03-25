@@ -24,7 +24,7 @@
                     <el-menu-item index="4-1">新材料</el-menu-item>
                     <el-menu-item index="4-2">环保材料</el-menu-item>
                     <el-menu-item index="4-3">重点工程</el-menu-item>
-                    <el-menu-item index="4-3">技术与应用</el-menu-item>
+                    <el-menu-item index="4-4">技术与应用</el-menu-item>
                 </el-submenu>
                 <el-submenu index="5">
                   <template slot="title">人力资源</template>
