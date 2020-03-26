@@ -1,11 +1,6 @@
 <template>
-  <div class="hello" >
-    <div class="foot-btn">
-      <div @click="openCl">
-        <div class="btn">&nbsp新&nbsp材&nbsp料&nbsp</div>
-        <div>了解更多</div>
-      </div>
-    </div>
+  <div class="hello" @click="openCl">
+
   </div>
 </template>
 
@@ -30,18 +25,6 @@ export default {
 </script>
 
 <style scoped>
-.foot-btn{
-  position: fixed;
-  width: 100%;
-  bottom: 5rem;
-  text-align: center;
-  color: #18abd4;
-}
-.foot-btn .btn{
-    display: inline;
-    border:3px solid #18abd4;
-    padding: 0 1.25rem;
-}
 .head{
   height:3.75rem;
   background-color:#005bac;
@@ -54,7 +37,8 @@ export default {
 	bottom:0;
 	left:0;
 	right:0;
-  background:url(../../static/cl_1.jpg) center 0 no-repeat;
+  background:url(https://high-cn-01.cdn.bilnn.com/get/wxcx01/2020/3/26/17115a5e6dce5733) center 0 no-repeat;
   background-size: cover;
 }
 </style>
+

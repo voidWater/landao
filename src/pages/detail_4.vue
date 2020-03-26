@@ -1,6 +1,6 @@
 <template>
-  <div class="hello" @click="openCl">
-
+  <div class="hello" >
+1231131
   </div>
 </template>
 
@@ -15,10 +15,6 @@ export default {
   methods:{
     handleSelect(){
 
-    },
-    openCl(){
-      this.$router.push({path:`/clhb_1`})
-      this.$emit('swTab','hbcl')
     }
   }
 }
@@ -33,11 +29,11 @@ export default {
 }
 .hello{
 	position:absolute;
-	top:0;
+	top:5rem;
 	bottom:0;
 	left:0;
 	right:0;
-  background:url(../../static/cl_2.jpg) center 0 no-repeat;
+  /* background:url(../../static/cl_1.jpg) center 0 no-repeat; */
   background-size: cover;
 }
 </style>

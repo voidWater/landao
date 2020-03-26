@@ -33,7 +33,7 @@ export default {
 	bottom:0;
 	left:0;
 	right:0;
-  background:url(../../static/step1.jpg) center 0 no-repeat;
+  background:url(https://high-cn-01.cdn.bilnn.com/get/wxcx01/2020/3/26/1711467047283116) center 0 no-repeat;
   background-size: cover;
 }
 </style>

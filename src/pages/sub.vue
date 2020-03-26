@@ -1,5 +1,6 @@
 <template>
   <div class="hello">
+
     <div class="zds-img" v-for="(item,index) in subs"   v-bind:style="{backgroundImage:'url('+ item.imgUrl + ')'}"   @mouseover="mouseOver(index)" @mouseleave="mouseLeave(index)">
       <transition name="el-zoom-in-bottom">
       <div v-show="item.showTitle"  class="zds-shadw">
@@ -8,6 +9,7 @@
       </div>
       </transition>
     </div>
+    <div>12312312</div>
     <!-- <img class="zd-img" src="../../static/sub1.jpg" /> -->
   </div>
 </template>
@@ -19,17 +21,18 @@ export default {
     return {
       msg: 'Welcome to Your Vue.js App',
       urll:'../../static/sub1.jpg) no-repeat;',
-      subs:[{showTitle:false,title:'洋浦蓝岛环保材料有限责任公司',des:'洋浦蓝岛环保材料有限责任公司是',imgUrl:'../../static/sub1.jpg'},
-      {showTitle:false,title:'洋浦蓝岛环保材料有限责任公司',des:'洋浦蓝岛环保材料有限责任公司是',imgUrl:'../../static/sub2.jpg'},
-      {showTitle:false,title:'洋浦蓝岛环保材料有限责任公司',des:'洋浦蓝岛环保材料有限责任公司是',imgUrl:'../../static/sub3.jpg'},
-      {showTitle:false,title:'洋浦蓝岛环保材料有限责任公司',des:'洋浦蓝岛环保材料有限责任公司是',imgUrl:'../../static/sub4.jpg'},
-      {showTitle:false,title:'洋浦蓝岛环保材料有限责任公司',des:'洋浦蓝岛环保材料有限责任公司是',imgUrl:'../../static/sub5.jpg'},
-      {showTitle:false,title:'洋浦蓝岛环保材料有限责任公司',des:'洋浦蓝岛环保材料有限责任公司是',imgUrl:'../../static/sub6.jpg'},
-      {showTitle:false,title:'洋浦蓝岛环保材料有限责任公司',des:'洋浦蓝岛环保材料有限责任公司是',imgUrl:'../../static/sub7.jpg'},
-      {showTitle:false,title:'洋浦蓝岛环保材料有限责任公司',des:'洋浦蓝岛环保材料有限责任公司是',imgUrl:'../../static/sub8.jpg'},
-      {showTitle:false,title:'洋浦蓝岛环保材料有限责任公司',des:'洋浦蓝岛环保材料有限责任公司是',imgUrl:'../../static/sub9.jpg'},
-      {showTitle:false,title:'洋浦蓝岛环保材料有限责任公司',des:'洋浦蓝岛环保材料有限责任公司是',imgUrl:'../../static/sub10.jpg'},
-      {showTitle:false,title:'洋浦蓝岛环保材料有限责任公司',des:'洋浦蓝岛环保材料有限责任公司是',imgUrl:'../../static/sub11.jpg'}]
+      subs:[{showTitle:false,title:'洋浦蓝岛环保材料有限责任公司',des:'洋浦蓝岛环保材料有限责任公司是',imgUrl:'https://high-cn-01.cdn.bilnn.com/get/wxcx01/2020/3/26/171148e43ad93359'},
+      {showTitle:false,title:'海南省洋浦蓝岛环保材料有限责任公司',des:'洋浦蓝岛环保材料有限责任公司是',imgUrl:'https://high-cn-01.cdn.bilnn.com/get/wxcx01/2020/3/26/171148e4033473c9'},
+      {showTitle:false,title:'洋浦蓝岛环保材料有限责任公司',des:'洋浦蓝岛环保材料有限责任公司是',imgUrl:'https://high-cn-01.cdn.bilnn.com/get/wxcx01/2020/3/26/171148e426e35533'},
+      {showTitle:false,title:'洋浦蓝岛环保材料有限责任公司',des:'洋浦蓝岛环保材料有限责任公司是',imgUrl:'https://high-cn-01.cdn.bilnn.com/get/wxcx01/2020/3/26/171148e4033473c9'},
+      {showTitle:false,title:'洋浦蓝岛环保材料有限责任公司',des:'洋浦蓝岛环保材料有限责任公司是',imgUrl:'https://high-cn-01.cdn.bilnn.com/get/wxcx01/2020/3/26/171148e426e35533'},
+      {showTitle:false,title:'洋浦蓝岛环保材料有限责任公司',des:'洋浦蓝岛环保材料有限责任公司是',imgUrl:'https://high-cn-01.cdn.bilnn.com/get/wxcx01/2020/3/26/171148e4033473c9'},
+      {showTitle:false,title:'洋浦蓝岛环保材料有限责任公司',des:'洋浦蓝岛环保材料有限责任公司是',imgUrl:'https://high-cn-01.cdn.bilnn.com/get/wxcx01/2020/3/26/171148e42e8c41c5'},
+      {showTitle:false,title:'洋浦蓝岛环保材料有限责任公司',des:'洋浦蓝岛环保材料有限责任公司是',imgUrl:'https://high-cn-01.cdn.bilnn.com/get/wxcx01/2020/3/26/171148e44d29efde'},
+      {showTitle:false,title:'洋浦蓝岛环保材料有限责任公司',des:'洋浦蓝岛环保材料有限责任公司是',imgUrl:'https://high-cn-01.cdn.bilnn.com/get/wxcx01/2020/3/26/171148e44d29efde'},
+      {showTitle:false,title:'洋浦蓝岛环保材料有限责任公司',des:'洋浦蓝岛环保材料有限责任公司是',imgUrl:'https://high-cn-01.cdn.bilnn.com/get/wxcx01/2020/3/26/171148e4d94ab07c'},
+      {showTitle:false,title:'洋浦蓝岛环保材料有限责任公司',des:'洋浦蓝岛环保材料有限责任公司是',imgUrl:'https://high-cn-01.cdn.bilnn.com/get/wxcx01/2020/3/26/171148e52f83143a'},
+      {title:'',des:'',imgUrl:'https://high-cn-01.cdn.bilnn.com/get/wxcx01/2020/3/26/171148e34e4e72bd'}]
     }
   },
   methods:{
@@ -49,6 +52,29 @@ export default {
 </script>
 
 <style scoped>
+  @media (min-width: 1366px) {
+     .zds-shadw .title{
+       color:#005aa9;
+       font-size: 2rem;
+       font-weight: bold;
+     }
+     .zds-shadw .des{
+       font-size: 1.5rem;
+       color:#606266
+     }
+  }
+
+  @media (max-width: 1996px) {
+    .zds-shadw .title{
+      color:#005aa9;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    .zds-shadw .des{
+      font-size: 1rem;
+      color:#606266
+    }
+  }
 .zds-shadw{
   text-align: center;
   padding: 1.875rem 0;
@@ -56,15 +82,12 @@ export default {
   width: 100%;
   height: 35%;
 }
-.zds-shadw .title{
+/* .zds-shadw .title{
   color:#005aa9;
   font-size: 2rem;
   font-weight: bold;
-}
-.zds-shadw .des{
-  font-size: 1.4rem;
-  color:#606266
-}
+} */
+
 .zds-img{
   height:33.3333%;
   width: 25%;

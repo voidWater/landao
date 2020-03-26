@@ -1,7 +1,7 @@
 <template>
   <div class="app" v-bind:class="{ bg_white: page==5||page==3}" >
 
-    <div class="head" v-show="page==1">
+    <div class="head" v-show="page==1||tabs[0].type=='xcl'||tabs[0].type=='hbcl'||tabs[0].type=='detail'">
           <el-row :gutter="20">
             <el-col :span="10"><img style="height: 60px;" src="../static/landao-log.png" @click="navTo(1)"/></el-col>
             <el-col :span="12">
@@ -37,7 +37,7 @@
               </el-menu>
             </el-col>
             <el-col :span="2">
-    OA登录|联系我们
+    <!-- OA登录|联系我们 -->
             </el-col>
           </el-row>
         </div>
@@ -47,7 +47,7 @@
         <a><div class="item"  v-bind:class="{ item_cur: page==item.page}"></div></a><span class="item_title" v-bind:class="{ item_title_cur: page==item.page}">{{item.name}}</span>
       </div>
     </div>
-    <div class="arr" v-if="page!=5">
+    <div class="arr" v-if="page!=tabs.length&&tabs.length!=0">
       <a @click="downPage">
         <img  src="../static/arr.png" />
       </a>
@@ -57,7 +57,7 @@
     </div>
 
     <transition :name="dh">
-      <router-view class="app-router-view"></router-view>
+      <router-view class="app-router-view" @swTab="swTab"></router-view>
     </transition>
   </div>
 </template>
@@ -80,16 +80,27 @@ export default {
      window.addEventListener('mousewheel',this.handleScroll,false)
   },
   methods:{
+    swTab(val){
+      if(val=='xcl'){
+        this.tabs=[{type:"hbcl",path:"/clx_1",page:1,name:'蓝岛灌浆料'},{type:"hbcl",path:"/clx_2",page:2,name:'新材料B'}],
+        this.jumpPage('clx_1',1);
+      }else if(val=='hbcl'){
+        this.tabs=[{type:"xcl",path:"/clhb_1",page:1,name:'环保材料A'},{type:"xcl",path:"/clhb_2",page:2,name:'环保材料B'}],
+        this.jumpPage('clhb_1',1);
+      }else if(val=='灌浆料'){
+        //this.tabs=[{type:"detail",path:"/detail_1",page:1},{type:"detail",path:"/detail_2",page:2},{type:"detail",path:"/detail_3",page:3},{type:"detail",path:"/detail_4",page:4}]
+        this.tabs=[];
+        this.jumpPage('detail_1?type='+val,1);
+      }
+    },
     navTo(path){
       this.$router.push({path:`/step`+path});
       this.tabs=[{type:"main",path:"/step1",page:1},{type:"main",path:"/step2",page:2},{type:"main",path:"/step3",page:3},{type:"main",path:"/step4",page:4},{type:"main",path:"/step5",page:5}]
-      
     },
     selectTab(item){
       this.jumpPage(item.path,item.page);
     },
     handleSelect(val){
-      console.log(val)
       var path = 'step1';
       switch(val){
         case '1-1': {this.switchTab("main");this.jumpPage('step2',2);break}
@@ -115,7 +126,6 @@ export default {
       this.$router.push({path:path})
     },
     switchTab(type){
-      console.log(type)
       if(type=='sub'){
         this.tabs=[];
         return;
@@ -135,12 +145,10 @@ export default {
       this.$router.push({path:`/step`+this.page})
     },
     handleScroll(e){
-      console.log(this.tabs.length==0)
       if(this.tabs.length==0){
         return
       }
       var direction = e.deltaY>0?'down':'up'
-      console.log(direction)
       var page=1;
       if(direction=='up'){
         this.dh='move-fade-top-to-bottom'
@@ -151,15 +159,22 @@ export default {
         if(this.page+1>this.tabs[page].length)return;
         page = this.page+1;
       }
-      console.log(this.tabs[page-1].path)
-      console.log(page)
       this.jumpPage(this.tabs[page-1].path,page)
     }
   }
 }
 </script>
-
 <style>
+  @media (min-width: 576px) {
+     body{
+      font-size: 24px;
+    }
+  }
+  @media (min-width: 1024px) {
+     body {
+      font-size: 48px;
+    }
+  }
   body{
   padding:0;
   margin:0;
@@ -200,7 +215,6 @@ export default {
   .bg_white{
     background-color: #FFFFFF;
   }
-
   .head .el-menu{
     background-color:#005bac;
   }

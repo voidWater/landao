@@ -23,7 +23,7 @@ export default {
 	bottom:0;
 	left:0;
 	right:0;
-  background:url(../../static/step3.jpg) no-repeat 100%;
+  background:url(https://high-cn-01.cdn.bilnn.com/get/wxcx01/2020/3/26/171146c2f938c373) no-repeat 100%;
   background-size: cover;
   background-repeat: no-repeat;
     -webkit-background-size: contain;
