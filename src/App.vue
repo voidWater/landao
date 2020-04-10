@@ -82,15 +82,24 @@ export default {
   methods:{
     swTab(val){
       if(val=='xcl'){
-        this.tabs=[{type:"hbcl",path:"/clx_1",page:1,name:'蓝岛灌浆料'},{type:"hbcl",path:"/clx_2",page:2,name:'新材料B'}],
+        this.tabs=[{type:"hbcl",path:"/clx_1",page:1,name:'蓝岛灌浆料'},{type:"hbcl",path:"/clx_2",page:2,name:'高性能抢修（SF-1和SF-2）和'},{type:"hbcl",path:"/clx_3",page:3,name:'海工特种修复材料'},{type:"hbcl",path:"/clx_4",page:4,name:'蓝岛牌无机防水堵漏灵'}],
         this.jumpPage('clx_1',1);
       }else if(val=='hbcl'){
-        this.tabs=[{type:"xcl",path:"/clhb_1",page:1,name:'环保材料A'},{type:"xcl",path:"/clhb_2",page:2,name:'环保材料B'}],
+        this.tabs=[{type:"xcl",path:"/clhb_1",page:1,name:'蓝岛牌矿渣微粉'},{type:"xcl",path:"/clhb_2",page:2,name:'蓝岛牌水泥'}],
         this.jumpPage('clhb_1',1);
       }else if(val=='灌浆料'){
         //this.tabs=[{type:"detail",path:"/detail_1",page:1},{type:"detail",path:"/detail_2",page:2},{type:"detail",path:"/detail_3",page:3},{type:"detail",path:"/detail_4",page:4}]
         this.tabs=[];
         this.jumpPage('detail_1?type='+val,1);
+      }else if(val=='抢修'){
+        this.tabs=[];
+        this.jumpPage('detail_2?type='+val,1);
+      }else if(val=='海工'){
+        this.tabs=[];
+        this.jumpPage('detail_3?type='+val,1);
+      }else if(val=='堵漏灵'){
+        this.tabs=[];
+        this.jumpPage('detail_4?type='+val,1);
       }
     },
     navTo(path){

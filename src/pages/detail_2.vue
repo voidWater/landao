@@ -1,6 +1,9 @@
 <template>
-  <div class="hello" >
-1231131
+  <div class="hello bg_white"  v-bind:class="{ 'bg_gray': page==3 || page==1}" >
+    <div v-if="page==1" class="page1">
+    </div>
+    <div v-if="page==2" class="page3"></div>
+    <div v-if="page==3" class="page4"></div>
   </div>
 </template>
 
@@ -9,31 +12,116 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      page:1,
+      limit:3,
+      type:this.$route.query.type
     }
   },
+  created() {
+    window.addEventListener('mousewheel',this.handleScroll,false)
+  },
   methods:{
-    handleSelect(){
-
+    handleScroll(e){
+      var direction = e.deltaY>0?'down':'up'
+      var page=1;
+      console.log(e.deltaY)
+      console.log(direction)
+      if(direction=='up'){
+          if(this.page==1)return
+          this.page = this.page-1;
+      }else{
+         if(this.page==this.limit)return
+          this.page = this.page+1;
+      }
     }
   }
 }
 </script>
 
 <style scoped>
+ .bg_white{
+   background-color: #ffffff;
+ }
+ .bg_gray{
+   background-color: #f7f7f7;
+ }
 .head{
   height:3.75rem;
   background-color:#005bac;
   text-align: center;
-  padding: 0.625rem
+  padding: 0.625rem;
 }
+ .title{
+   margin-top:1.25rem;
+   font-size: 1.8rem;
+   padding:1.8rem;
+   text-align: center;
+ }
+ .title-color{
+   color:#0075c2
+ }
+ .title-rad{
+   border: 2px solid #0075c2;
+   display: inline;
+   padding: 0 15px;
+   border-radius: 15px;
+ }
+ .dl{
+   text-align: left;
+   margin-top: 1.25rem;
+   font-size: 1.25rem;
+ }
+ .font-color{
+   color:#0075c2;
+   font-weight: bold;
+ }
 .hello{
 	position:absolute;
 	top:5rem;
 	bottom:0;
 	left:0;
 	right:0;
-  /* background:url(../../static/cl_1.jpg) center 0 no-repeat; */
   background-size: cover;
+}
+.page1{
+  background-color: #f7f7f7;
+  position:absolute;
+  top:0rem;
+  bottom:0;
+  left:0;
+  right:0;
+  background:url(https://high-cn-01.cdn.bilnn.com/get/wxcx01/2020/4/10/171648404c0fcb1a) no-repeat 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    -o-background-size: contain;
+    background-position: center 0;
+}
+.page3{
+  background-color: #f7f7f7;
+  position:absolute;
+  top:0rem;
+  bottom:0;
+  left:0;
+  right:0;
+  background:url(https://high-cn-01.cdn.bilnn.com/get/wxcx01/2020/4/10/17164829fd6351c0) no-repeat 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    -o-background-size: contain;
+    background-position: center 0;
+}
+.page4{
+  position:absolute;
+  top:0rem;
+  bottom:0;
+  left:0;
+  right:0;
+  background:url(https://high-cn-01.cdn.bilnn.com/get/wxcx01/2020/4/10/1716472e58e45077) no-repeat 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    -o-background-size: contain;
+    background-position: center 0;
 }
 </style>

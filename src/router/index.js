@@ -17,6 +17,8 @@ import cl_4 from '@/pages/cl_4'
 
 import clx_1 from '@/pages/clx_1'
 import clx_2 from '@/pages/clx_2'
+import clx_3 from '@/pages/clx_3'
+import clx_4 from '@/pages/clx_4'
 import clhb_1 from '@/pages/clhb_1'
 import clhb_2 from '@/pages/clhb_2'
 
@@ -79,6 +81,14 @@ export default new Router({
     path: '/clx_2',
     name: 'clx_2',
     component: clx_2
+  },{
+    path: '/clx_3',
+    name: 'clx_3',
+    component: clx_3
+  },{
+    path: '/clx_4',
+    name: 'clx_4',
+    component: clx_4
   },{
     path: '/clhb_1',
     name: 'clhb_1',
