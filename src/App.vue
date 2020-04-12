@@ -94,7 +94,7 @@ export default {
       this.subPage = true;
       this.subPageName = val;
       if(val=='xcl'){
-        this.tabs=[{type:"hbcl",path:"/clx_1",page:1,name:'蓝岛灌浆料'},{type:"hbcl",path:"/clx_2",page:2,name:'高性能抢修（SF-1和SF-2）和抢建（HF-24和VM-24）砂浆'},{type:"hbcl",path:"/clx_3",page:3,name:'海工特种修复材料'},{type:"hbcl",path:"/clx_4",page:4,name:'蓝岛牌无机防水堵漏灵'}],
+        this.tabs=[{type:"hbcl",path:"/clx_1",page:1,name:'蓝岛灌浆料'},{type:"hbcl",path:"/clx_2",page:2,name:'高性能抢修和抢建砂浆'},{type:"hbcl",path:"/clx_3",page:3,name:'海工特种修复材料'},{type:"hbcl",path:"/clx_4",page:4,name:'蓝岛牌无机防水堵漏灵'}],
         this.jumpPage('clx_1',1);
       }else if(val=='hbcl'){
         this.tabs=[{type:"xcl",path:"/clhb_1",page:1,name:'“蓝岛”牌矿渣微粉'},{type:"xcl",path:"/clhb_2",page:2,name:'“蓝岛”牌水泥'}],

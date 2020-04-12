@@ -3,12 +3,12 @@
     <div class="cp-img"> <img style="width:100%" src="https://high-cn-01.cdn.bilnn.com/get/wxcx01/2020/3/26/17115961f7a5a442" /> </div>
       <div class="cpinfo">
         <el-row :gutter="20">
-          <el-col :span="5">&nbsp;</el-col>
-          <el-col :span="14">
+          <el-col :span="1">&nbsp;</el-col>
+          <el-col :span="22">
             <div class="title font-color">高强无收缩灌浆料：</div>
             <div class="des font-color">是一种高性能聚合物改性水泥基灌浆料，由水泥、精选骨料及各种复合添加剂组成<div class="more_btn" @click="openCl">了解更多</div></div>
           </el-col>
-          <el-col :span="5" style="padding: 3.125rem;"></el-col>
+          <el-col :span="1" style="padding: 3.125rem;"></el-col>
         </el-row>
       </div>
   </div>
