@@ -27,6 +27,9 @@ import detail_2 from '@/pages/detail_2'
 import detail_3 from '@/pages/detail_3'
 import detail_4 from '@/pages/detail_4'
 
+import detail_11 from '@/pages/detail_11'
+import detail_12 from '@/pages/detail_12'
+
 
 Vue.use(Router)
 
@@ -113,6 +116,14 @@ export default new Router({
     path: '/detail_4',
     name: 'detail_4',
     component: detail_4
+  },{
+    path: '/detail_11',
+    name: 'detail_11',
+    component: detail_11
+  },{
+    path: '/detail_12',
+    name: 'detail_12',
+    component: detail_12
   }
   ]
 })

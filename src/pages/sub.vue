@@ -9,7 +9,6 @@
       </div>
       </transition>
     </div>
-    <div>12312312</div>
     <!-- <img class="zd-img" src="../../static/sub1.jpg" /> -->
   </div>
 </template>

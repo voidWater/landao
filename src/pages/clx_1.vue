@@ -1,5 +1,6 @@
 <template>
   <div class="hello" >
+    <div class="cp-img"> <img style="width:100%" src="https://high-cn-01.cdn.bilnn.com/get/wxcx01/2020/3/26/17115961f7a5a442" /> </div>
       <div class="cpinfo">
         <el-row :gutter="20">
           <el-col :span="5">&nbsp;</el-col>
@@ -26,7 +27,6 @@ export default {
 
     },
     openCl(){
-      //this.$router.push({path:`/clx_1`})
       this.$emit('swTab','灌浆料')
     }
   }
@@ -74,7 +74,14 @@ export default {
 	bottom:0;
 	left:0;
 	right:0;
-  background:url(https://high-cn-01.cdn.bilnn.com/get/wxcx01/2020/3/26/171159b43a73f14f) center 0 no-repeat;
+  background:url() center 0 no-repeat;
   background-size: cover;
+}
+.cp-img{
+  margin: auto auto;
+  text-align: center;
+  margin-top: 6.25rem;
+  border-radius: 1.25rem;
+  width: 30%;
 }
 </style>

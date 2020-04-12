@@ -1,10 +1,10 @@
 <template>
   <div class="hello" >
     <div class="foot-btn">
-      <div @click="openCl">
+      <a href="#"><div @click="openCl">
         <div class="btn">&nbsp新&nbsp材&nbsp料&nbsp</div>
         <div>了解更多</div>
-      </div>
+      </div></a>
     </div>
   </div>
 </template>
@@ -31,17 +31,19 @@ export default {
 
 <style scoped>
 .foot-btn{
-  position: fixed;
-  width: 100%;
-  bottom: 5rem;
-  text-align: center;
-  color: #18abd4;
-}
-.foot-btn .btn{
-    display: inline;
-    border:3px solid #18abd4;
-    padding: 0 1.25rem;
-}
+    position: fixed;
+    width: 100%;
+    bottom: 6rem;
+    text-align: center;
+    color: #18abd4;
+    font-size: 2.4rem;
+  }
+  .foot-btn .btn{
+      display: inline;
+      border:3px solid #18abd4;
+      padding: 0 1.25rem;
+      border-radius: 5px;
+  }
 .head{
   height:3.75rem;
   background-color:#005bac;
@@ -55,6 +57,29 @@ export default {
 	left:0;
 	right:0;
   background:url(../../static/cl_1.jpg) center 0 no-repeat;
-  background-size: cover;
 }
+  a {
+      text-decoration: none;
+      color: #18abd4;
+  }
+  /*正常的未被访问过的链接*/
+  a:link {
+      text-decoration: none;
+  }
+  /*已经访问过的链接*/
+  a:visited {
+      text-decoration: none;
+  }
+  /*鼠标划过(停留)的链接*/
+  a:hover {
+      text-decoration: none;
+  }
+  /* 正在点击的链接，鼠标在元素上按下还没有松开*/
+  a:active {
+      text-decoration: none;
+  }
+  /* 获得焦点的时候 鼠标松开时显示的颜色*/
+  a:focus {
+      text-decoration: none;
+  }
 </style>

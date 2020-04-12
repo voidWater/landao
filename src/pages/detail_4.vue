@@ -1,13 +1,10 @@
 <template>
   <div class="hello bg_white"  v-bind:class="{ 'bg_gray': page==3 || page==1}" >
     <div v-if="page==1" class="page1">
-    1
     </div>
-    <div v-if="page==2" style="margin-top:1.875rem">
-2
+    <div v-if="page==2" class="page3">
     </div>
-    <div v-if="page==3" class="page3"></div>
-    <div v-if="page==4" class="page4"></div>
+    <div v-if="page==3" class="page4"></div>
   </div>
 </template>
 
@@ -17,7 +14,7 @@ export default {
   data () {
     return {
       page:1,
-      limit:4,
+      limit:3,
       type:this.$route.query.type
     }
   },
@@ -94,7 +91,7 @@ export default {
   bottom:0;
   left:0;
   right:0;
-  background:url(https://high-cn-01.cdn.bilnn.com/get/wxcx01/2020/3/26/171159b43a73f14f) no-repeat 100%;
+  background:url(https://high-cn-01.cdn.bilnn.com/get/wxcx01/2020/4/11/171698a71aa9efc3) no-repeat 100%;
   background-size: contain;
   background-repeat: no-repeat;
     -webkit-background-size: contain;
@@ -108,7 +105,7 @@ export default {
   bottom:0;
   left:0;
   right:0;
-  background:url(https://high-cn-01.cdn.bilnn.com/get/wxcx01/2020/3/26/171158aa44197f5b) no-repeat 100%;
+  background:url(https://high-cn-01.cdn.bilnn.com/get/wxcx01/2020/4/11/171698a6ab943cb7) no-repeat 100%;
   background-size: contain;
   background-repeat: no-repeat;
     -webkit-background-size: contain;
@@ -121,7 +118,7 @@ export default {
   bottom:0;
   left:0;
   right:0;
-  background:url(http://high-cn-01.cdn.bilnn.com/get/wxcx01/2020/3/26/171157a12b3ba13b) no-repeat 100%;
+  background:url(../../static/12.jpg) no-repeat 100%;
   background-size: contain;
   background-repeat: no-repeat;
     -webkit-background-size: contain;
