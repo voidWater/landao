@@ -1,6 +1,6 @@
 <template>
   <div class="hello" @click="openCl">
-     <div class="cp-img"> <img style="width:100%" src="../../static/产品中心-12.jpg" /> </div>
+     <div class="cp-img"> <img style="width:100%" src="../../static/cpzx-12.jpg" /> </div>
       <div class="cpinfo">
         <el-row :gutter="20">
           <el-col :span="1">&nbsp;</el-col>
@@ -34,15 +34,6 @@ export default {
 </script>
 
 <style scoped>
-.more_btn{
-  display: inline;
-  padding: 0.625rem;
-  border: 2px solid #f7f7f7;
-  border-radius: 5px;
-  font-size: 1.5rem;
-  color: #f7f7f7;
-  margin-left: 5rem;
-}
 .cpinfo{
   position: fixed;
   width: 100%;
@@ -51,17 +42,50 @@ export default {
   background-color: #d6d2d27d;
   text-align: center;
 }
-.cpinfo .title{
-  margin-top: 1.875rem;
-  font-size: 2rem;
-  font-weight: bold;
-  color:#0075c2;
-}
-.cpinfo .des{
-  margin-top: 0.625rem;
-  font-size: 1.5rem;
-  color:#f7f7f7;
-}
+@media (min-width: 1500px) {
+     .cpinfo .title{
+       margin-top: 1.875rem;
+       font-size: 2rem;
+       font-weight: bold;
+       color:#0075c2;
+     }
+     .cpinfo .des{
+       margin-top: 0.625rem;
+       font-size: 1.5rem;
+       color:#f7f7f7;
+     }
+     .more_btn{
+       display: inline;
+       padding: 0.625rem;
+       border: 2px solid #f7f7f7;
+       border-radius: 5px;
+       font-size: 1.5rem;
+       color: #f7f7f7;
+       margin-left: 5rem;
+     }
+  }
+  @media (max-width: 1500px) {
+     .cpinfo .title{
+       margin-top: 1.275rem;
+       font-size: 1.5rem;
+       font-weight: bold;
+       color:#0075c2;
+     }
+     .cpinfo .des{
+       margin-top: 0.325rem;
+       font-size: 1.2rem;
+       color:#f7f7f7;
+     }
+     .more_btn{
+       display: inline;
+       padding: 0.625rem;
+       border: 2px solid #f7f7f7;
+       border-radius: 5px;
+       font-size: 1.2rem;
+       color: #f7f7f7;
+       margin-left: 3rem;
+     }
+  }
 .head{
   height:3.75rem;
   background-color:#005bac;

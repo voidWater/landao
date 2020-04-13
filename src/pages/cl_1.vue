@@ -30,7 +30,8 @@ export default {
 </script>
 
 <style scoped>
-.foot-btn{
+@media (min-width: 1500px) {
+  .foot-btn{
     position: fixed;
     width: 100%;
     bottom: 6rem;
@@ -43,7 +44,27 @@ export default {
       border:3px solid #18abd4;
       padding: 0 1.25rem;
       border-radius: 5px;
+      margin-bottom: 5px;
   }
+}
+@media (max-width: 1500px) {
+  .foot-btn{
+      position: fixed;
+      width: 100%;
+      bottom: 4rem;
+      text-align: center;
+      color: #18abd4;
+      font-size: 1.4rem;
+    }
+    .foot-btn .btn{
+        display: inline;
+        border:3px solid #18abd4;
+        padding: 0 1.25rem;
+        border-radius: 5px;
+        margin-bottom: 5px;
+    }
+}
+
 .head{
   height:3.75rem;
   background-color:#005bac;

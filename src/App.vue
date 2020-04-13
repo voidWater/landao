@@ -51,7 +51,7 @@
 
     <div class="arr" v-if="page!=tabs.length&&tabs.length!=0">
       <a @click="downPage">
-        <img  src="../static/arr.png" />
+        <i class="el-icon-arrow-down"></i>
       </a>
     </div>
 
@@ -246,6 +246,26 @@ export default {
       font-size: 48px;
     }
   }
+  @media (min-width: 1500px) {
+    .arr{
+      position: fixed;
+      width: 100%;
+      text-align: center;
+      z-index: 99999;
+      bottom: 1.25rem;
+      color:#d6d2d2;
+    }
+  }
+  @media (max-width: 1500px) {
+    .arr{
+      position: fixed;
+      width: 100%;
+      text-align: center;
+      z-index: 99999;
+      bottom: 0.25rem;
+      color:#d6d2d2;
+    }
+  }
   body{
   padding:0;
   margin:0;
@@ -294,16 +314,6 @@ export default {
     left:3.75rem;
     top: 5rem;
     z-index: 99999;
-  }
-  .arr{
-    position: fixed;
-    width: 100%;
-    text-align: center;
-    bottom: 1.25rem;
-    z-index: 99999;
-  }
-  .arr img{
-    width: 3.125rem;
   }
 
   /* .scoll-bar .item{
@@ -367,7 +377,7 @@ export default {
   .upArr{
     text-align: center;
     background-color: #ffffff91;
-    color: #0e4eff;
+    color: #005bac;
     margin: 0.625rem auto;
     width: 70px;
     height: 70px;

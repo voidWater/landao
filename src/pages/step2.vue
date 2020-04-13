@@ -33,22 +33,43 @@ export default {
 </script>
 
 <style scoped>
- .content{
-   text-align: center;
-   margin-top: 1.875rem;
- }
- .content .title{
-   font-size: 1.875rem
- }
- .dl{
-   text-align: left;
-   margin-top: 1.25rem;
-   font-size: 1.125rem;
- }
- .font-color{
-   color:#259fb7;
-   font-weight: bold;
- }
+  @media (min-width: 1500px) {
+    .content{
+      text-align: center;
+      margin-top: 1.875rem;
+    }
+    .content .title{
+      font-size: 1.875rem
+    }
+    .dl{
+      text-align: left;
+      margin-top: 1.25rem;
+      font-size: 1.125rem;
+    }
+    .font-color{
+      color:#259fb7;
+      font-weight: bold;
+    }
+  }
+  @media (max-width: 1500px) {
+    .content{
+      text-align: center;
+      margin-top: 1.875rem;
+    }
+    .content .title{
+      font-size: 1.275rem
+    }
+    .dl{
+      text-align: left;
+      margin-top: 1.25rem;
+      font-size: 0.95rem;
+    }
+    .font-color{
+      color:#259fb7;
+      font-weight: bold;
+    }
+  }
+
 .hello{
 	position:absolute;
 	top:0;
