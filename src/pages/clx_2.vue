@@ -5,7 +5,7 @@
           <el-col :span="1">&nbsp;</el-col>
           <el-col :span="22">
             <div class="title font-color">高性能抢修（SF-1和SF-2）和抢建（HF-24和VM-24）砂浆</div>
-            <div class="des font-color">是一种高性能聚合物改性水泥基灌浆料，由水泥、精选骨料及各种复合添加剂组成<div class="more_btn" @click="openCl">了解更多</div></div>
+            <div class="des font-color">是一种高性能聚合物改性水泥基灌浆料，由水泥、精选骨料及各种复合添加剂组成<a href="#"><div class="more_btn" @click="openCl">了解更多</div></a></div>
           </el-col>
           <el-col :span="1" style="padding: 3.125rem;"></el-col>
         </el-row>
@@ -97,7 +97,7 @@ export default {
 	bottom:0;
 	left:0;
 	right:0;
-  background:url(https://high-cn-01.cdn.bilnn.com/get/wxcx01/2020/3/26/171159b43a73f14f) center 0 no-repeat;
+  background:url(../../static/bj.jpg) center 0 no-repeat;
   background-size: cover;
 }
 </style>

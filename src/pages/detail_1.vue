@@ -11,8 +11,8 @@
         <el-col :span="4">&nbsp;</el-col>
       </el-row>
     </div>
-    <div v-if="page==2" style="margin-top:1.875rem">
-      <el-row :gutter="20" justify="end">
+    <div v-if="page==2" class="page5">
+<!--      <el-row :gutter="20" justify="end">
         <el-col :span="2">&nbsp;</el-col>
         <el-col :span="11">
          <div class='dl title-color' style="font-weight: bold;">【产品说明】</div>
@@ -40,7 +40,7 @@
           <div class="dl">[自流平型] 灌浆层厚度小于15mm的设备基础及钢结构柱脚板二次灌浆，混凝土梁板柱加固角钢与混凝土之间缝隙灌浆，混凝土地面找平施工。</div>
         </el-col>
         <el-col :span="2">&nbsp;</el-col>
-      </el-row>
+      </el-row> -->
     </div>
     <div v-if="page==3" class="page3"></div>
     <div v-if="page==4" class="page4"></div>
@@ -158,6 +158,19 @@ export default {
   left:0;
   right:0;
   background:url(http://high-cn-01.cdn.bilnn.com/get/wxcx01/2020/3/26/171157a12b3ba13b) no-repeat 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    -o-background-size: contain;
+    background-position: center 0;
+}
+.page5{
+  position:absolute;
+  top:0rem;
+  bottom:0;
+  left:0;
+  right:0;
+  background:url(	https://high-cn-01.cdn.bilnn.com/get/wxcx01/2020/4/13/171739b25a0f7165) no-repeat 100%;
   background-size: contain;
   background-repeat: no-repeat;
     -webkit-background-size: contain;

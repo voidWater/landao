@@ -2,6 +2,8 @@
   <div class="hello" >
     <div class="foot-btn">
       <a href="#"><div @click="openCl">
+        <div class="cp-img"> <img style="width:100%" src="https://high-cn-01.cdn.bilnn.com/get/wxcx01/2020/4/13/171739b217c9fc64" /> </div>
+
         <div class="btn">&nbsp新&nbsp材&nbsp料&nbsp</div>
         <div>了解更多</div>
       </div></a>
@@ -77,7 +79,15 @@ export default {
 	bottom:0;
 	left:0;
 	right:0;
-  background:url(../../static/cl_1.jpg) center 0 no-repeat;
+  background:url(../../static/bj.jpg) center 0 no-repeat;
+  background-size: cover;
+}
+.cp-img{
+  margin: auto auto;
+  text-align: center;
+  margin-top: 6.25rem;
+  border-radius: 1.25rem;
+  width: 30%;
 }
   a {
       text-decoration: none;
