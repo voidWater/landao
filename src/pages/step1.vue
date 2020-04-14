@@ -33,7 +33,7 @@ export default {
 	bottom:0;
 	left:0;
 	right:0;
-  background:url(https://high-cn-01.cdn.bilnn.com/get/wxcx01/2020/3/26/1711467047283116) center 0 no-repeat;
+  background:url(http://free-cn-01.oss.tusy.xyz/ddimg/jfs/t1/100169/6/18528/1219786/5e9583d6E8d8ceb74/497d403a0486416f.jpg) center 0 no-repeat;
   background-size: cover;
 }
 </style>

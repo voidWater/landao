@@ -3,7 +3,7 @@
 
     <div class="zds-img" v-for="(item,index) in subs"   v-bind:style="{backgroundImage:'url('+ item.imgUrl + ')'}"   @mouseover="mouseOver(index)" @mouseleave="mouseLeave(index)">
       <transition name="el-zoom-in-bottom">
-      <div v-show="item.showTitle"  class="zds-shadw">
+      <div v-show="item.showTitle"  class="zds-shadw" >
         <div class="title">{{item.title}}</div>
         <div class='des'>{{item.des}}</div>
       </div>
@@ -20,18 +20,18 @@ export default {
     return {
       msg: 'Welcome to Your Vue.js App',
       urll:'../../static/sub1.jpg) no-repeat;',
-      subs:[{showTitle:false,title:'洋浦蓝岛环保材料有限责任公司',des:'洋浦蓝岛环保材料有限责任公司是',imgUrl:'https://high-cn-01.cdn.bilnn.com/get/wxcx01/2020/3/26/171148e43ad93359'},
-      {showTitle:false,title:'海南省洋浦蓝岛环保材料有限责任公司',des:'洋浦蓝岛环保材料有限责任公司是',imgUrl:'https://high-cn-01.cdn.bilnn.com/get/wxcx01/2020/3/26/171148e4033473c9'},
-      {showTitle:false,title:'洋浦蓝岛环保材料有限责任公司',des:'洋浦蓝岛环保材料有限责任公司是',imgUrl:'https://high-cn-01.cdn.bilnn.com/get/wxcx01/2020/3/26/171148e426e35533'},
-      {showTitle:false,title:'洋浦蓝岛环保材料有限责任公司',des:'洋浦蓝岛环保材料有限责任公司是',imgUrl:'https://high-cn-01.cdn.bilnn.com/get/wxcx01/2020/3/26/171148e4033473c9'},
-      {showTitle:false,title:'洋浦蓝岛环保材料有限责任公司',des:'洋浦蓝岛环保材料有限责任公司是',imgUrl:'https://high-cn-01.cdn.bilnn.com/get/wxcx01/2020/3/26/171148e426e35533'},
-      {showTitle:false,title:'洋浦蓝岛环保材料有限责任公司',des:'洋浦蓝岛环保材料有限责任公司是',imgUrl:'https://high-cn-01.cdn.bilnn.com/get/wxcx01/2020/3/26/171148e4033473c9'},
-      {showTitle:false,title:'洋浦蓝岛环保材料有限责任公司',des:'洋浦蓝岛环保材料有限责任公司是',imgUrl:'https://high-cn-01.cdn.bilnn.com/get/wxcx01/2020/3/26/171148e42e8c41c5'},
-      {showTitle:false,title:'洋浦蓝岛环保材料有限责任公司',des:'洋浦蓝岛环保材料有限责任公司是',imgUrl:'https://high-cn-01.cdn.bilnn.com/get/wxcx01/2020/3/26/171148e44d29efde'},
-      {showTitle:false,title:'洋浦蓝岛环保材料有限责任公司',des:'洋浦蓝岛环保材料有限责任公司是',imgUrl:'https://high-cn-01.cdn.bilnn.com/get/wxcx01/2020/3/26/171148e44d29efde'},
-      {showTitle:false,title:'洋浦蓝岛环保材料有限责任公司',des:'洋浦蓝岛环保材料有限责任公司是',imgUrl:'https://high-cn-01.cdn.bilnn.com/get/wxcx01/2020/3/26/171148e4d94ab07c'},
-      {showTitle:false,title:'洋浦蓝岛环保材料有限责任公司',des:'洋浦蓝岛环保材料有限责任公司是',imgUrl:'https://high-cn-01.cdn.bilnn.com/get/wxcx01/2020/3/26/171148e52f83143a'},
-      {title:'',des:'',imgUrl:'https://high-cn-01.cdn.bilnn.com/get/wxcx01/2020/3/26/171148e34e4e72bd'}]
+      subs:[{showTitle:false,title:'洋浦蓝岛环保材料有限责任公司',des:'洋浦蓝岛环保材料有限责任公司是',imgUrl:'../../static/ld-01.jpg'},
+      {showTitle:false,title:'海南省洋浦蓝岛环保材料有限责任公司',des:'洋浦蓝岛环保材料有限责任公司是',imgUrl:'../../static/ld-02.jpg'},
+      {showTitle:false,title:'洋浦蓝岛环保材料有限责任公司',des:'洋浦蓝岛环保材料有限责任公司是',imgUrl:'../../static/ld-03.jpg'},
+      {showTitle:false,title:'洋浦蓝岛环保材料有限责任公司',des:'洋浦蓝岛环保材料有限责任公司是',imgUrl:'../../static/ld-04.jpg'},
+      {showTitle:false,title:'洋浦蓝岛环保材料有限责任公司',des:'洋浦蓝岛环保材料有限责任公司是',imgUrl:'../../static/ld-01.jpg'},
+      {showTitle:false,title:'洋浦蓝岛环保材料有限责任公司',des:'洋浦蓝岛环保材料有限责任公司是',imgUrl:'../../static/ld-02.jpg'},
+      {showTitle:false,title:'洋浦蓝岛环保材料有限责任公司',des:'洋浦蓝岛环保材料有限责任公司是',imgUrl:'../../static/ld-03.jpg'},
+      {showTitle:false,title:'洋浦蓝岛环保材料有限责任公司',des:'洋浦蓝岛环保材料有限责任公司是',imgUrl:'../../static/ld-04.jpg'},
+      {showTitle:false,title:'洋浦蓝岛环保材料有限责任公司',des:'洋浦蓝岛环保材料有限责任公司是',imgUrl:'../../static/ld-01.jpg'},
+      {showTitle:false,title:'洋浦蓝岛环保材料有限责任公司',des:'洋浦蓝岛环保材料有限责任公司是',imgUrl:'../../static/ld-02.jpg'},
+      {showTitle:false,title:'洋浦蓝岛环保材料有限责任公司',des:'洋浦蓝岛环保材料有限责任公司是',imgUrl:'../../static/ld-03.jpg'},
+      {title:'',des:'',imgUrl:'../../static/subbj.jpg'}]
     }
   },
   methods:{

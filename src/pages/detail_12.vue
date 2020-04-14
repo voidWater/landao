@@ -92,7 +92,7 @@ export default {
   bottom:0;
   left:0;
   right:0;
-  background:url(https://high-cn-01.cdn.bilnn.com/get/wxcx01/2020/4/11/17169e1651a2fb59) no-repeat 100%;
+  background:url(../../static/hbcl02/01.jpg) no-repeat 100%;
   background-size: contain;
   background-repeat: no-repeat;
     -webkit-background-size: contain;
@@ -106,7 +106,7 @@ export default {
   bottom:0;
   left:0;
   right:0;
-  background:url(https://high-cn-01.cdn.bilnn.com/get/wxcx01/2020/4/11/17169e16033b88f5) no-repeat 100%;
+  background:url(../../static/hbcl02/02.jpg) no-repeat 100%;
   background-size: contain;
   background-repeat: no-repeat;
     -webkit-background-size: contain;
@@ -119,8 +119,7 @@ export default {
   bottom:0;
   left:0;
   right:0;
-  background:url(https://high-cn-01.cdn.bilnn.com/get/wxcx01/2020/4/11/17169e16b8ad203e
-) no-repeat 100%;
+  background:url(../../static/hbcl02/03.jpg) no-repeat 100%;
   background-size: contain;
   background-repeat: no-repeat;
     -webkit-background-size: contain;

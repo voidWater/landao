@@ -2,9 +2,9 @@
   <div class="hello" >
     <div class="foot-btn">
       <a href="#"><div @click="openCl">
-      <div class="cp-img"> <img style="width:100%" src="https://high-cn-01.cdn.bilnn.com/get/wxcx01/2020/4/14/171763c2321a9de3" /> </div>
+      <div class="cp-img"> <img style="width:100%" src="../../static/hbclcp.png" /> </div>
         <div class="btn">&nbsp环&nbsp保&nbsp材&nbsp料&nbsp</div>
-        <div>了解更多</div>
+        <div style="margin-top: 5px;">了解更多</div>
       </div></a>
     </div>
   </div>
@@ -38,7 +38,7 @@ export default {
     bottom: 6rem;
     text-align: center;
     color: #18abd4;
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
   .foot-btn .btn{
       display: inline;
@@ -55,7 +55,7 @@ export default {
       bottom: 4rem;
       text-align: center;
       color: #18abd4;
-      font-size: 1.4rem;
+      font-size: 1rem;
     }
     .foot-btn .btn{
         display: inline;

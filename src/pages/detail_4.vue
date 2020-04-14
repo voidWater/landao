@@ -91,7 +91,7 @@ export default {
   bottom:0;
   left:0;
   right:0;
-  background:url(https://high-cn-01.cdn.bilnn.com/get/wxcx01/2020/4/11/171698a71aa9efc3) no-repeat 100%;
+  background:url(../../static/xcl04/01.jpg) no-repeat 100%;
   background-size: contain;
   background-repeat: no-repeat;
     -webkit-background-size: contain;
@@ -105,7 +105,7 @@ export default {
   bottom:0;
   left:0;
   right:0;
-  background:url(https://high-cn-01.cdn.bilnn.com/get/wxcx01/2020/4/11/171698a6ab943cb7) no-repeat 100%;
+  background:url(../../static/xcl04/02.jpg) no-repeat 100%;
   background-size: contain;
   background-repeat: no-repeat;
     -webkit-background-size: contain;

@@ -1,7 +1,7 @@
 <template>
   <div class="hello bg_white"  v-bind:class="{ 'bg_gray': page==3 || page==1}" >
     <div v-if="page==1" class="page1">
-      <el-row :gutter="20">
+      <!-- <el-row :gutter="20">
         <el-col :span="4">&nbsp;</el-col>
         <el-col :span="16">
           <div class="title font-color">蓝岛“灌装料”</div>
@@ -9,7 +9,7 @@
 
         </el-col>
         <el-col :span="4">&nbsp;</el-col>
-      </el-row>
+      </el-row> -->
     </div>
     <div v-if="page==2" class="page5">
 <!--      <el-row :gutter="20" justify="end">
@@ -130,7 +130,7 @@ export default {
   bottom:0;
   left:0;
   right:0;
-  background:url(https://high-cn-01.cdn.bilnn.com/get/wxcx01/2020/3/26/171159b43a73f14f) no-repeat 100%;
+  background:url(../../static/xcl01/01.jpg) no-repeat 100%;
   background-size: contain;
   background-repeat: no-repeat;
     -webkit-background-size: contain;
@@ -144,7 +144,7 @@ export default {
   bottom:0;
   left:0;
   right:0;
-  background:url(https://high-cn-01.cdn.bilnn.com/get/wxcx01/2020/3/26/171158aa44197f5b) no-repeat 100%;
+  background:url(../../static/xcl01/03.jpg) no-repeat 100%;
   background-size: contain;
   background-repeat: no-repeat;
     -webkit-background-size: contain;
@@ -157,7 +157,7 @@ export default {
   bottom:0;
   left:0;
   right:0;
-  background:url(http://high-cn-01.cdn.bilnn.com/get/wxcx01/2020/3/26/171157a12b3ba13b) no-repeat 100%;
+  background:url(../../static/xcl01/04.jpg) no-repeat 100%;
   background-size: contain;
   background-repeat: no-repeat;
     -webkit-background-size: contain;
@@ -170,7 +170,7 @@ export default {
   bottom:0;
   left:0;
   right:0;
-  background:url(	https://high-cn-01.cdn.bilnn.com/get/wxcx01/2020/4/13/171739b25a0f7165) no-repeat 100%;
+  background:url(../../static/xcl01/02.jpg) no-repeat 100%;
   background-size: contain;
   background-repeat: no-repeat;
     -webkit-background-size: contain;
