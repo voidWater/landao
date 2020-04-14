@@ -2,7 +2,7 @@
   <div class="hello" >
     <div class="foot-btn">
       <a href="#"><div @click="openCl">
-      <div class="cp-img"> <img style="width:100%" src="https://high-cn-01.cdn.bilnn.com/get/wxcx01/2020/4/13/171739b217c9fc64" /> </div>
+      <div class="cp-img"> <img style="width:100%" src="https://high-cn-01.cdn.bilnn.com/get/wxcx01/2020/4/14/171763c2321a9de3" /> </div>
         <div class="btn">&nbsp环&nbsp保&nbsp材&nbsp料&nbsp</div>
         <div>了解更多</div>
       </div></a>
